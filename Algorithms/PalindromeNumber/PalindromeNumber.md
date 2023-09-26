@@ -39,7 +39,8 @@ palindrome.
 - Check for potential integer overflow and return `false` if it would occur.
 - Update the reversed integer by multiplying it by 10 and adding the last digit of the given integer.
 - Update the given integer by dividing it by 10.
-- Once out of the loop, return `true` if the given integer is equal to the reversed integer and `false` otherwise.
+
+4. Once out of the loop, return `true` if the given integer is equal to the reversed integer and `false` otherwise.
 
 ### Time Complexity
 

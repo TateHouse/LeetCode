@@ -8,6 +8,7 @@ SET(CMAKE_CXX_STANDARD_REQUIRED ON)
 SET(HEADER_FILES)
 
 SET(SOURCE_FILES
+		Algorithms/PalindromeNumber/PalindromeNumber.cpp
 		Algorithms/TwoSum/TwoSum.cpp)
 
 ADD_LIBRARY(${PROJECT_NAME} STATIC ${HEADER_FILES} ${SOURCE_FILES})

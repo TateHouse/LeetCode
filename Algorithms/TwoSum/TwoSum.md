@@ -59,8 +59,7 @@ elements in the given worst-case scenario.
 ### Considerations and Alternatives
 
 1. **Brute Force**: Iterate through the `std::vector` using two nested loops, checking each pair of numbers to see if
-   they add up to the target. This solution has a time complexity of *O(n<sup>2</sup>)* and a space complexity of *O(
-   1)*.
+   they add up to the target. This solution has a time complexity of *O(n<sup>2</sup>)* and a space complexity of *O(1)*.
 2. **Sorting + Two-Pointer**: Sort the `std::vector` and then iterate through it from both ends, checking the sum of the
    two numbers at the ends of the `std::vector` to see if they add up to the target. If the sum is less than the target,
    the left index is incremented. If the sum is greater than the target, the right index is decremented. This solution

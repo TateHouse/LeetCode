@@ -37,14 +37,13 @@ You can return the answer in any order.
 ## [Solution](https://github.com/TateHouse/LeetCode/blob/master/Algorithms/TwoSum/TwoSum.cpp)
 
 1. Create an empty `std::unordered_map` to store the numbers and their indices that have already been visited.
-2. Iterate through the given `std::vector` of numbers.  
-   The following steps are performed each iteration:
-
-- Calculate the complement of the current number by subtracting it from the target to get the number that would
-  add up to the target if added to the current number.
-- Check if the complement is already in the map.
-    - If it is, return the current index and the index of the complement.
-    - If it is not, add the current number and its index to the map.
+2. Iterate through the given `std::vector` of numbers.
+3. Within the loop:
+    - Calculate the complement of the current number by subtracting it from the target to get the number that would
+      add up to the target if added to the current number.
+    - Check if the complement is already in the map.
+        - If it is, return the current index and the index of the complement.
+        - If it is not, add the current number and its index to the map.
 
 ### Time Complexity
 
@@ -59,7 +58,8 @@ elements in the given worst-case scenario.
 ### Considerations and Alternatives
 
 1. **Brute Force**: Iterate through the `std::vector` using two nested loops, checking each pair of numbers to see if
-   they add up to the target. This solution has a time complexity of *O(n<sup>2</sup>)* and a space complexity of *O(1)*.
+   they add up to the target. This solution has a time complexity of *O(n<sup>2</sup>)* and has a space complexity of
+   *O(1)*.
 2. **Sorting + Two-Pointer**: Sort the `std::vector` and then iterate through it from both ends, checking the sum of the
    two numbers at the ends of the `std::vector` to see if they add up to the target. If the sum is less than the target,
    the left index is incremented. If the sum is greater than the target, the right index is decremented. This solution

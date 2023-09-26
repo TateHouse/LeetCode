@@ -10,9 +10,8 @@ public:
         for (std::size_t index {0}; index < numbers.size(); ++index) {
             const auto number {numbers[index]};
             const auto complement {target - number};
-            const auto iterator {seen.find(complement)};
 
-            if (iterator != seen.end()) {
+            if (const auto iterator {seen.find(complement)}; iterator != seen.end()) {
                 return {static_cast<int>(index), iterator->second};
             }
 

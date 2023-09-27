@@ -11,6 +11,7 @@ SET(SOURCE_FILES
 		Algorithms/AddTwoNumbers/AddTwoNumbers.cpp
 		Algorithms/PalindromeNumber/PalindromeNumber.cpp
 		Algorithms/RomanToInteger/RomanToInteger.cpp
-		Algorithms/TwoSum/TwoSum.cpp)
+		Algorithms/TwoSum/TwoSum.cpp
+		Algorithms/ValidParentheses/ValidParentheses.cpp)
 
 ADD_LIBRARY(${PROJECT_NAME} STATIC ${HEADER_FILES} ${SOURCE_FILES})

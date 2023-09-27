@@ -10,6 +10,7 @@ SET(HEADER_FILES)
 SET(SOURCE_FILES
 		Algorithms/AddTwoNumbers/AddTwoNumbers.cpp
 		Algorithms/PalindromeNumber/PalindromeNumber.cpp
+		Algorithms/RomanToInteger/RomanToInteger.cpp
 		Algorithms/TwoSum/TwoSum.cpp)
 
 ADD_LIBRARY(${PROJECT_NAME} STATIC ${HEADER_FILES} ${SOURCE_FILES})

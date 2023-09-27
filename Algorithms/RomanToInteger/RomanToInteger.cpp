@@ -6,7 +6,7 @@ public:
         auto result {0};
         auto previousValue {0};
 
-        for (const auto character: string) {
+        for (const auto& character: string) {
             const auto currentValue {convertRomanChar(character)};
             result += (currentValue - 2 * (currentValue > previousValue ? previousValue : 0));
 
@@ -17,7 +17,7 @@ public:
     }
 
 private:
-    [[nodiscard]] static int convertRomanChar(const char character) {
+    [[nodiscard]] static int convertRomanChar(const char& character) {
         switch (character) {
             case 'I':
                 return 1;

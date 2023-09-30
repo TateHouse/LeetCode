@@ -9,6 +9,7 @@ SET(HEADER_FILES)
 
 SET(SOURCE_FILES
 		Algorithms/AddTwoNumbers/AddTwoNumbers.cpp
+		Algorithms/LongestCommonPrefix/LongestCommonPrefix.cpp
 		Algorithms/PalindromeNumber/PalindromeNumber.cpp
 		Algorithms/RomanToInteger/RomanToInteger.cpp
 		Algorithms/TwoSum/TwoSum.cpp

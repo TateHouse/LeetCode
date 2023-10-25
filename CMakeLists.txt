@@ -10,6 +10,7 @@ SET(HEADER_FILES)
 SET(SOURCE_FILES
 		Algorithms/AddTwoNumbers/AddTwoNumbers.cpp
 		Algorithms/FindLargestValueInEachTreeRow/FindLargestValueInEachTreeRow.cpp
+		Algorithms/IntegerToRoman/IntegerToRoman.cpp
 		Algorithms/LongestCommonPrefix/LongestCommonPrefix.cpp
 		Algorithms/PalindromeNumber/PalindromeNumber.cpp
 		Algorithms/RomanToInteger/RomanToInteger.cpp

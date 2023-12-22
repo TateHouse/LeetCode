@@ -12,6 +12,7 @@ SET(SOURCE_FILES
 		Algorithms/FindLargestValueInEachTreeRow/FindLargestValueInEachTreeRow.cpp
 		Algorithms/IntegerToRoman/IntegerToRoman.cpp
 		Algorithms/LongestCommonPrefix/LongestCommonPrefix.cpp
+		Algorithms/MaximumDepthOfBinaryTree/MaximumDepthOfBinaryTree.cpp
 		Algorithms/PalindromeNumber/PalindromeNumber.cpp
 		Algorithms/RomanToInteger/RomanToInteger.cpp
 		Algorithms/TwoSum/TwoSum.cpp

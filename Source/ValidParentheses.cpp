@@ -2,9 +2,10 @@
 #include <string>
 #include <unordered_map>
 
+namespace LeetCode {
 class Solution {
 public:
-    bool isValid(const std::string& string) {
+    [[maybe_unused]] static const bool isValid(const std::string& string) {
         if (string.size() % 2 != 0) {
             return false;
         }
@@ -37,3 +38,4 @@ public:
         return stack.empty();
     }
 };
+}

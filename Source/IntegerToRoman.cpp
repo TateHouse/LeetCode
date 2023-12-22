@@ -2,9 +2,10 @@
 #include <vector>
 #include <utility>
 
+namespace LeetCode {
 class Solution {
 public:
-    std::string intToRoman(int number) {
+    [[maybe_unused]] static const std::string intToRoman(int number) {
         const std::vector<std::pair<int, std::string>> romanNumerals {
                 {1000, "M"},
                 {900,  "CM"},
@@ -23,7 +24,7 @@ public:
 
         std::string result {};
 
-        for (const auto& [value, roman] : romanNumerals) {
+        for (const auto& [value, roman]: romanNumerals) {
             while (number >= value) {
                 result.append(roman);
                 number = number - value;
@@ -33,3 +34,4 @@ public:
         return result;
     }
 };
+}

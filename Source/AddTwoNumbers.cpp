@@ -1,24 +1,26 @@
+namespace LeetCode {
 struct ListNode {
 public:
-    int val;
-    ListNode* next;
-
-    ListNode() : val {0}, next {nullptr} {
+    ListNode() : val {0} {
 
     }
 
-    ListNode(int x) : val {x}, next {nullptr} {
+    explicit ListNode(int x) : val {x} {
 
     }
 
     ListNode(int x, ListNode* next) : val {x}, next {next} {
 
     }
+
+public:
+    int val;
+    ListNode* next {nullptr};
 };
 
 class Solution {
 public:
-    ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
+    [[maybe_unused]] static const ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
         auto dummyNode {ListNode()};
         auto* resultLinkedList {&dummyNode};
         auto* firstLinkedList {l1};
@@ -53,3 +55,4 @@ public:
         return dummyNode.next;
     }
 };
+}

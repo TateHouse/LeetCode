@@ -2,9 +2,10 @@
 #include <vector>
 #include <stdexcept>
 
+namespace LeetCode {
 class Solution {
 public:
-    std::vector<int> twoSum(std::vector<int>& numbers, int target) {
+    [[maybe_unused]] static std::vector<int> twoSum(std::vector<int>& numbers, int target) {
         std::unordered_map<int, int> seen;
 
         for (std::size_t index {0}; index < numbers.size(); ++index) {
@@ -21,3 +22,4 @@ public:
         throw std::invalid_argument("No two sum solution!");
     }
 };
+}

@@ -1,5 +1,6 @@
 #include <algorithm>
 
+namespace LeetCode {
 struct TreeNode {
 public:
     TreeNode() : value {0} {
@@ -22,7 +23,7 @@ public:
 
 class Solution {
 public:
-    int maxDepth(TreeNode* node) {
+    [[maybe_unused]] static const int maxDepth(TreeNode* node) {
         if (node == nullptr) {
             return 0;
         }
@@ -33,3 +34,4 @@ public:
         return std::max(leftSubtreeHeight, rightSubtreeHeight) + 1;
     }
 };
+}

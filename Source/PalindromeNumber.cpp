@@ -1,8 +1,9 @@
 #include <limits>
 
+namespace LeetCode {
 class Solution {
 public:
-    bool isPalindrome(int number) {
+    [[maybe_unused]] static const bool isPalindrome(int number) {
         if (number < 0) {
             return false;
         }
@@ -24,3 +25,4 @@ public:
         return original == reversed;
     }
 };
+}

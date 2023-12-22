@@ -2,61 +2,62 @@
 #include <queue>
 #include <vector>
 
+namespace LeetCode {
 struct TreeNode {
 public:
-	TreeNode() : value {0} {
-	
-	}
-	
-	explicit TreeNode(const int x) : value {x} {
-	
-	}
-	
-	TreeNode(const int x, TreeNode* left, TreeNode* right) : value {x}, leftNode {left}, rightNode {right} {
-	
-	}
+    TreeNode() : value {0} {
+
+    }
+
+    explicit TreeNode(const int x) : value {x} {
+
+    }
+
+    TreeNode(const int x, TreeNode* left, TreeNode* right) : value {x}, leftNode {left}, rightNode {right} {
+
+    }
 
 public:
-	int value;
-	TreeNode* leftNode {nullptr};
-	TreeNode* rightNode {nullptr};
-	
+    int value;
+    TreeNode* leftNode {nullptr};
+    TreeNode* rightNode {nullptr};
 };
 
 class Solution {
 public:
-	std::vector<int> largestValues(TreeNode* rootNode) {
-		std::vector<int> values {};
-		
-		if (rootNode == nullptr) {
-			return values;
-		}
-		
-		std::queue<TreeNode*> nodeQueue {};
-		nodeQueue.push(rootNode);
-		
-		while (!nodeQueue.empty()) {
-			auto levelSize {nodeQueue.size()};
-			auto largestValueAtLevel {std::numeric_limits<int>::min()};
-			
-			for (std::size_t index {0}; index < levelSize; ++index) {
-				auto* currentNode {nodeQueue.front()};
-				nodeQueue.pop();
-				
-				if (currentNode->leftNode != nullptr) {
-					nodeQueue.push(currentNode->leftNode);
-				}
-				
-				if (currentNode->rightNode != nullptr) {
-					nodeQueue.push(currentNode->rightNode);
-				}
-				
-				largestValueAtLevel = std::max(largestValueAtLevel, currentNode->value);
-			}
-			
-			values.emplace_back(largestValueAtLevel);
-		}
-		
-		return values;
-	}
+    [[maybe_unused]] static const std::vector<int> largestValues(TreeNode* rootNode) {
+        std::vector<int> values {};
+
+        if (rootNode == nullptr) {
+            return values;
+        }
+
+        std::queue<TreeNode*> nodeQueue {};
+        nodeQueue.push(rootNode);
+
+        while (!nodeQueue.empty()) {
+            auto levelSize {nodeQueue.size()};
+            auto largestValueAtLevel {std::numeric_limits<int>::min()};
+
+            for (std::size_t index {0}; index < levelSize; ++index) {
+                auto* currentNode {nodeQueue.front()};
+                nodeQueue.pop();
+
+                if (currentNode->leftNode != nullptr) {
+                    nodeQueue.push(currentNode->leftNode);
+                }
+
+                if (currentNode->rightNode != nullptr) {
+                    nodeQueue.push(currentNode->rightNode);
+                }
+
+                largestValueAtLevel = std::max(largestValueAtLevel, currentNode->value);
+            }
+
+            values.emplace_back(largestValueAtLevel);
+        }
+
+        return values;
+    }
 };
+}

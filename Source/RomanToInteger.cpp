@@ -1,13 +1,14 @@
 #include <string>
 
+namespace LeetCode {
 class Solution {
 public:
-    int romanToInt(const std::string& string) {
+    [[maybe_unused]] static const int romanToInt(const std::string& string) {
         auto result {0};
         auto previousValue {0};
 
         for (const auto& character: string) {
-            const auto currentValue {convertRomanChar(character)};
+            const auto currentValue {Solution::convertRomanChar(character)};
             result += (currentValue - 2 * (currentValue > previousValue ? previousValue : 0));
 
             previousValue = currentValue;
@@ -38,3 +39,4 @@ private:
         }
     }
 };
+}

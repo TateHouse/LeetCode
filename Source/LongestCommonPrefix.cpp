@@ -1,9 +1,10 @@
 #include <string>
 #include <vector>
 
+namespace LeetCode {
 class Solution {
 public:
-    std::string longestCommonPrefix(std::vector<std::string>& strings) {
+    [[maybe_unused]] static const std::string longestCommonPrefix(std::vector<std::string>& strings) {
         if (strings.empty()) {
             return "";
         }
@@ -27,3 +28,4 @@ public:
         return prefix;
     }
 };
+}

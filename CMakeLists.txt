@@ -5,17 +5,6 @@ PROJECT(LeetCode VERSION 1.0.0 LANGUAGES CXX)
 SET(CMAKE_CXX_STANDARD 23)
 SET(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-SET(HEADER_FILES)
-
-SET(SOURCE_FILES
-		Algorithms/AddTwoNumbers/AddTwoNumbers.cpp
-		Algorithms/FindLargestValueInEachTreeRow/FindLargestValueInEachTreeRow.cpp
-		Algorithms/IntegerToRoman/IntegerToRoman.cpp
-		Algorithms/LongestCommonPrefix/LongestCommonPrefix.cpp
-		Algorithms/MaximumDepthOfBinaryTree/MaximumDepthOfBinaryTree.cpp
-		Algorithms/PalindromeNumber/PalindromeNumber.cpp
-		Algorithms/RomanToInteger/RomanToInteger.cpp
-		Algorithms/TwoSum/TwoSum.cpp
-		Algorithms/ValidParentheses/ValidParentheses.cpp)
-
 ADD_LIBRARY(${PROJECT_NAME} STATIC ${HEADER_FILES} ${SOURCE_FILES})
+
+ADD_SUBDIRECTORY(Source)

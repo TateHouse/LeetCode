@@ -10,10 +10,7 @@ public:
 
     }
 
-    TreeNode(const int x, TreeNode* left, TreeNode* right) :
-            value {x},
-            leftNode {left},
-            rightNode {right} {
+    TreeNode(const int x, TreeNode* left, TreeNode* right) : value {x}, leftNode {left}, rightNode {right} {
 
     }
 

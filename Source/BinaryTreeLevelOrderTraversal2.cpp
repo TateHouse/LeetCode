@@ -1,4 +1,5 @@
 #include <queue>
+#include <ranges>
 #include <vector>
 
 namespace LeetCode {
@@ -23,7 +24,7 @@ public:
 };
 
 class Solution {
-    [[maybe_unused]] static const std::vector<std::vector<int>> levelOrder(const TreeNode* const node) {
+    [[maybe_unused]] static const std::vector<std::vector<int>> levelOrderBottom(const TreeNode* const node) {
         std::vector<std::vector<int>> elements {};
 
         if (node == nullptr) {
@@ -34,10 +35,10 @@ class Solution {
         nodeQueue.emplace(node);
 
         while (!nodeQueue.empty()) {
+            const auto currentElementNodeCount {nodeQueue.size()};
             std::vector<int> currentLevelElements {};
-            const auto currentLevelElementCount {nodeQueue.size()};
 
-            for (std::size_t index {0}; index < currentLevelElementCount; ++index) {
+            for (std::size_t index {0}; index < currentElementNodeCount; ++index) {
                 const auto* const currentNode {nodeQueue.front()};
                 nodeQueue.pop();
 
@@ -58,6 +59,8 @@ class Solution {
 
             elements.emplace_back(currentLevelElements);
         }
+
+        std::ranges::reverse(elements);
 
         return elements;
     }

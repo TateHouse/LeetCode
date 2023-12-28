@@ -3,6 +3,7 @@ CMAKE_MINIMUM_REQUIRED(VERSION 3.26)
 SET(SOURCE_FILES
 		AddTwoNumbers.cpp
 		BinaryTreeLevelOrderTraversal.cpp
+		BinaryTreeLevelOrderTraversal2.cpp
 		FindLargestValueInEachTreeRow.cpp
 		IntegerToRoman.cpp
 		LongestCommonPrefix.cpp

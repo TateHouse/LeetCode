@@ -10,6 +10,7 @@ SET(SOURCE_FILES
 		MaximumDepthOfBinaryTree.cpp
 		PalindromeNumber.cpp
 		RomanToInteger.cpp
+		SearchInsertPosition.cpp
 		TwoSum.cpp
 		ValidParentheses.cpp)
 

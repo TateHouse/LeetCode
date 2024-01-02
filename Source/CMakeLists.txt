@@ -11,6 +11,7 @@ SET(SOURCE_FILES
 		MaximumDepthOfBinaryTree.cpp
 		MergeTwoSortedLists.cpp
 		PalindromeNumber.cpp
+		RemoveDuplicatesFromSortedArray.cpp
 		RomanToInteger.cpp
 		SearchInsertPosition.cpp
 		TwoSum.cpp

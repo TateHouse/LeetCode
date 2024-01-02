@@ -1,9 +1,8 @@
 #include <queue>
-#include <ranges>
 #include <vector>
 
 namespace LeetCode {
-struct TreeNode {
+struct TreeNode final {
 public:
     TreeNode() : value {0} {
 
@@ -23,7 +22,7 @@ public:
     TreeNode* rightNode {nullptr};
 };
 
-class Solution {
+class Solution final {
     [[maybe_unused]] static const std::vector<std::vector<int>> levelOrderBottom(const TreeNode* const node) {
         std::vector<std::vector<int>> elements {};
 

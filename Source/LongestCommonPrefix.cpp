@@ -2,7 +2,7 @@
 #include <vector>
 
 namespace LeetCode {
-class Solution {
+class Solution final {
 public:
     [[maybe_unused]] static const std::string longestCommonPrefix(std::vector<std::string>& strings) {
         if (strings.empty()) {

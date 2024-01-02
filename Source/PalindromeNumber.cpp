@@ -1,7 +1,7 @@
 #include <limits>
 
 namespace LeetCode {
-class Solution {
+class Solution final {
 public:
     [[maybe_unused]] static const bool isPalindrome(int number) {
         if (number < 0) {

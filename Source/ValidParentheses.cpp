@@ -3,7 +3,7 @@
 #include <unordered_map>
 
 namespace LeetCode {
-class Solution {
+class Solution final {
 public:
     [[maybe_unused]] static const bool isValid(const std::string& string) {
         if (string.size() % 2 != 0) {

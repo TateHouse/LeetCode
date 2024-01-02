@@ -1,7 +1,7 @@
 #include <string>
 
 namespace LeetCode {
-class Solution {
+class Solution final {
 public:
     [[maybe_unused]] static const int romanToInt(const std::string& string) {
         auto result {0};

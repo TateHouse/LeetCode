@@ -2,7 +2,7 @@
 #include <unordered_set>
 
 namespace LeetCode {
-class Solution {
+class Solution final {
 public:
     [[maybe_unused]] static const int numJewelsInStones(const std::string& jewels, const std::string& stones) {
         const std::unordered_set<char> uniqueJewels {jewels.cbegin(), jewels.cend()};

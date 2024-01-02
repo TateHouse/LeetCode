@@ -2,7 +2,7 @@
 #include <vector>
 
 namespace LeetCode {
-class Solution {
+class Solution final {
 public:
     [[maybe_unused]] static const int searchInsert(const std::vector<int>& numbers, const int targetElement) {
         auto leftIndex {0};

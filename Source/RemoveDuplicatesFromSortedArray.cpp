@@ -1,7 +1,7 @@
 #include <vector>
 
 namespace LeetCode {
-class Solution {
+class Solution final {
 public:
     [[maybe_unused]] static const int removeDuplicates(std::vector<int>& numbers) {
         if (numbers.empty()) {

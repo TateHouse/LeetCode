@@ -1,5 +1,5 @@
 namespace LeetCode {
-struct ListNode {
+struct ListNode final {
 public:
     ListNode() : val {0} {
 
@@ -18,7 +18,7 @@ public:
     ListNode* next {nullptr};
 };
 
-class Solution {
+class Solution final {
 public:
     [[maybe_unused]] static const ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
         auto dummyNode {ListNode()};

@@ -3,7 +3,7 @@
 #include <stdexcept>
 
 namespace LeetCode {
-class Solution {
+class Solution final {
 public:
     [[maybe_unused]] static std::vector<int> twoSum(std::vector<int>& numbers, const int target) {
         std::unordered_map<int, int> seen;

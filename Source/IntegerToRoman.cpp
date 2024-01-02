@@ -3,7 +3,7 @@
 #include <utility>
 
 namespace LeetCode {
-class Solution {
+class Solution final {
 public:
     [[maybe_unused]] static const std::string intToRoman(int number) {
         const std::vector<std::pair<int, std::string>> romanNumerals {

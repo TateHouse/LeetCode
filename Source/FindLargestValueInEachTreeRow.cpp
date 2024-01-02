@@ -3,7 +3,7 @@
 #include <vector>
 
 namespace LeetCode {
-struct TreeNode {
+struct TreeNode final {
 public:
     TreeNode() : value {0} {
 
@@ -23,7 +23,7 @@ public:
     TreeNode* rightNode {nullptr};
 };
 
-class Solution {
+class Solution final {
 public:
     [[maybe_unused]] static const std::vector<int> largestValues(TreeNode* rootNode) {
         std::vector<int> values {};

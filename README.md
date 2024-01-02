@@ -5,9 +5,8 @@
 A repository containing my solutions to LeetCode problems. I will be continually adding to this repository as I solve
 more problems.
 
-My submitted solutions are also available on my [LeetCode profile](https://leetcode.com/TateH/). The solutions in this repository may look
-slightly different from my submitted solutions on LeetCode. This is to maintain consistency with my personal coding
-style.
+The solutions in this repository may look slightly different from my submitted solutions on LeetCode. For example, some
+method parameters may be renamed to better reflect their purpose and adhere to my personal style.
 
 ## Solutions
 

@@ -25,3 +25,4 @@ style.
 | 104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)               | [C++](https://github.com/TateHouse/LeetCode/blob/master/Source/MaximumDepthOfBinaryTree.cpp)      | Easy      |
 | 107 | [Binary Tree Level Order Traversal II](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/) | [C++](https://github.com/TateHouse/LeetCode/blob/master/Source/BinaryTreeLevelOrderTraversal2.cpp) | Medium    |
 | 515 | [Find Largest Value in Each Tree Row](https://leetcode.com/problems/find-largest-value-in-each-tree-row/) | [C++](https://github.com/TateHouse/LeetCode/blob/master/Source/FindLargestValueInEachTreeRow.cpp) | Medium    |
+| 771 | [Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/)                                     | [C++](https://github.com/TateHouse/LeetCode/blob/master/Source/JewelsAndStones.cpp) | Easy      |

@@ -5,7 +5,7 @@
 namespace LeetCode {
 class Solution {
 public:
-    [[maybe_unused]] static std::vector<int> twoSum(std::vector<int>& numbers, int target) {
+    [[maybe_unused]] static std::vector<int> twoSum(std::vector<int>& numbers, const int target) {
         std::unordered_map<int, int> seen;
 
         for (std::size_t index {0}; index < numbers.size(); ++index) {

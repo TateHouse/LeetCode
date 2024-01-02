@@ -5,11 +5,11 @@ public:
 
     }
 
-    explicit ListNode(int x) : val {x} {
+    explicit ListNode(const int x) : val {x} {
 
     }
 
-    ListNode(int x, ListNode* next) : val {x}, next {next} {
+    ListNode(const int x, ListNode* next) : val {x}, next {next} {
 
     }
 

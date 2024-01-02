@@ -9,6 +9,7 @@ SET(SOURCE_FILES
 		JewelsAndStones.cpp
 		LongestCommonPrefix.cpp
 		MaximumDepthOfBinaryTree.cpp
+		MergeTwoSortedLists.cpp
 		PalindromeNumber.cpp
 		RomanToInteger.cpp
 		SearchInsertPosition.cpp

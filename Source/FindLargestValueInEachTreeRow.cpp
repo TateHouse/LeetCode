@@ -25,7 +25,7 @@ public:
 
 class Solution final {
 public:
-    [[maybe_unused]] static const std::vector<int> largestValues(TreeNode* rootNode) {
+    [[maybe_unused]] static const std::vector<int> getLargestValuesInEachTreeRow(TreeNode* rootNode) {
         std::vector<int> values {};
 
         if (rootNode == nullptr) {

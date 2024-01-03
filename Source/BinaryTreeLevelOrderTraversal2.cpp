@@ -23,7 +23,7 @@ public:
 };
 
 class Solution final {
-    [[maybe_unused]] static const std::vector<std::vector<int>> levelOrderBottom(const TreeNode* const node) {
+    [[maybe_unused]] static const std::vector<std::vector<int>> getBottomUpLevelOrderTraversal(const TreeNode* const node) {
         std::vector<std::vector<int>> elements {};
 
         if (node == nullptr) {

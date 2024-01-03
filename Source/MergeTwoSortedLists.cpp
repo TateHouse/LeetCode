@@ -20,7 +20,7 @@ public:
 
 class Solution final {
 public:
-    [[maybe_unused]] static const ListNode* mergeTwoLists(ListNode* linkedListOne, ListNode* linkedListTwo) {
+    [[maybe_unused]] static const ListNode* mergeTwoSortedLinkedLists(ListNode* linkedListOne, ListNode* linkedListTwo) {
         auto dummyNode {ListNode()};
         auto* tailNode {&dummyNode};
 

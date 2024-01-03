@@ -23,13 +23,13 @@ public:
 
 class Solution final {
 public:
-    [[maybe_unused]] static const int maxDepth(TreeNode* node) {
+    [[maybe_unused]] static const int getMaximumDepth(TreeNode* node) {
         if (node == nullptr) {
             return 0;
         }
 
-        const auto leftSubtreeHeight {maxDepth(node->leftNode)};
-        const auto rightSubtreeHeight {maxDepth(node->rightNode)};
+        const auto leftSubtreeHeight {getMaximumDepth(node->leftNode)};
+        const auto rightSubtreeHeight {getMaximumDepth(node->rightNode)};
 
         return std::max(leftSubtreeHeight, rightSubtreeHeight) + 1;
     }

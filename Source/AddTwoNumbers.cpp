@@ -20,11 +20,11 @@ public:
 
 class Solution final {
 public:
-    [[maybe_unused]] static const ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
+    [[maybe_unused]] static const ListNode* getLinkedListSum(ListNode* linkedListOne, ListNode* linkedListTwo) {
         auto dummyNode {ListNode()};
         auto* resultLinkedList {&dummyNode};
-        auto* firstLinkedList {l1};
-        auto* secondLinkedList {l2};
+        auto* firstLinkedList {linkedListOne};
+        auto* secondLinkedList {linkedListTwo};
         auto carry {0};
 
         while (firstLinkedList != nullptr || secondLinkedList != nullptr) {

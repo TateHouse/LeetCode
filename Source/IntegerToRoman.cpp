@@ -5,7 +5,7 @@
 namespace LeetCode {
 class Solution final {
 public:
-    [[maybe_unused]] static const std::string intToRoman(int number) {
+    [[maybe_unused]] static const std::string getRomanNumeral(int number) {
         const std::vector<std::pair<int, std::string>> romanNumerals {
                 {1000, "M"},
                 {900,  "CM"},

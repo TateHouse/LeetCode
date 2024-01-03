@@ -3,7 +3,7 @@
 namespace LeetCode {
 class Solution final {
 public:
-    [[maybe_unused]] static const int romanToInt(const std::string& string) {
+    [[maybe_unused]] static const int getRomanNumeralValue(const std::string& string) {
         auto result {0};
         auto previousValue {0};
 

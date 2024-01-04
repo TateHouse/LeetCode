@@ -13,6 +13,7 @@ SET(SOURCE_FILES
 		MergeTwoSortedLists.cpp
 		PalindromeNumber.cpp
 		RemoveDuplicatesFromSortedArray.cpp
+		RemoveElement.cpp
 		RomanToInteger.cpp
 		SearchInsertPosition.cpp
 		TwoSum.cpp

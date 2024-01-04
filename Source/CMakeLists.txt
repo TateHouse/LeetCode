@@ -16,6 +16,7 @@ SET(SOURCE_FILES
 		RomanToInteger.cpp
 		SearchInsertPosition.cpp
 		TwoSum.cpp
+		ValidAnagram.cpp
 		ValidParentheses.cpp)
 
 TARGET_SOURCES(${PROJECT_NAME} PRIVATE ${SOURCE_FILES})

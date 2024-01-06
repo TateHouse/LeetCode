@@ -1,15 +1,15 @@
 namespace LeetCode {
 struct ListNode final {
 public:
-    ListNode() : val {0} {
+    ListNode() noexcept: val {0} {
 
     }
 
-    explicit ListNode(const int x) : val {x} {
+    explicit ListNode(const int x) noexcept: val {x} {
 
     }
 
-    ListNode(const int x, ListNode* next) : val {x}, next {next} {
+    ListNode(const int x, ListNode* next) noexcept: val {x}, next {next} {
 
     }
 
@@ -20,7 +20,8 @@ public:
 
 class Solution final {
 public:
-    [[maybe_unused]] static const ListNode* mergeTwoSortedLinkedLists(ListNode* linkedListOne, ListNode* linkedListTwo) {
+    [[maybe_unused]] static const ListNode* mergeTwoSortedLinkedLists(ListNode* linkedListOne,
+                                                                      ListNode* linkedListTwo) noexcept {
         auto dummyNode {ListNode()};
         auto* tailNode {&dummyNode};
 

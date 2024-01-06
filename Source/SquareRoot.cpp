@@ -3,7 +3,7 @@
 namespace LeetCode {
 class Solution final {
 public:
-    [[maybe_unused]] static const int squareRoot(const int x) {
+    [[maybe_unused]] static const int squareRoot(const int x) noexcept {
         if (x < 2) {
             return x;
         }

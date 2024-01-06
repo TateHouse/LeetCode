@@ -4,15 +4,15 @@
 namespace LeetCode {
 struct TreeNode final {
 public:
-    TreeNode() : value {0} {
+    TreeNode() noexcept: value {0} {
 
     }
 
-    explicit TreeNode(const int x) : value {x} {
+    explicit TreeNode(const int x) noexcept: value {x} {
 
     }
 
-    TreeNode(const int x, TreeNode* left, TreeNode* right) : value {x}, leftNode {left}, rightNode {right} {
+    TreeNode(const int x, TreeNode* left, TreeNode* right) noexcept: value {x}, leftNode {left}, rightNode {right} {
 
     }
 

@@ -4,7 +4,8 @@
 namespace LeetCode {
 class Solution final {
 public:
-    [[maybe_unused]] static const int getTargetInsertIndex(const std::vector<int>& numbers, const int targetElement) {
+    [[maybe_unused]] static const int getTargetInsertIndex(const std::vector<int>& numbers,
+                                                           const int targetElement) noexcept {
         auto leftIndex {0};
         auto rightIndex {static_cast<int>(numbers.size())};
 

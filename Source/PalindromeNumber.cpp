@@ -3,7 +3,7 @@
 namespace LeetCode {
 class Solution final {
 public:
-    [[maybe_unused]] static const bool isPalindrome(int number) {
+    [[maybe_unused]] static const bool isPalindrome(int number) noexcept {
         if (number < 0) {
             return false;
         }

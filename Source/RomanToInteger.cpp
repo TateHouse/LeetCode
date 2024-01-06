@@ -3,11 +3,11 @@
 namespace LeetCode {
 class Solution final {
 public:
-    [[maybe_unused]] static const int getRomanNumeralValue(const std::string& string) {
+    [[maybe_unused]] static const int getRomanNumeralValue(const std::string& string) noexcept {
         auto result {0};
         auto previousValue {0};
 
-        for (const auto& character: string) {
+        for (const auto& character : string) {
             const auto currentValue {Solution::convertRomanChar(character)};
             result += (currentValue - 2 * (currentValue > previousValue ? previousValue : 0));
 
@@ -18,7 +18,7 @@ public:
     }
 
 private:
-    [[nodiscard]] static int convertRomanChar(const char& character) {
+    [[nodiscard]] static int convertRomanChar(const char& character) noexcept {
         switch (character) {
             case 'I':
                 return 1;

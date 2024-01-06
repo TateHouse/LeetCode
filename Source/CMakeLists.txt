@@ -9,6 +9,7 @@ SET(SOURCE_FILES
 		IntegerToRoman.cpp
 		JewelsAndStones.cpp
 		LongestCommonPrefix.cpp
+		LongestSubstringWithoutRepeatingCharacters.cpp
 		MaximumDepthOfBinaryTree.cpp
 		MergeTwoSortedLists.cpp
 		PalindromeNumber.cpp

@@ -2,7 +2,7 @@
 #include <vector>
 
 namespace LeetCode {
-class Solution {
+class Solution final {
 public:
     [[maybe_unused]] static const int getIndexOfFirstOccurrenceOfSubstring(const std::string& source,
                                                                            const std::string& pattern) {

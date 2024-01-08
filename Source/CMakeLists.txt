@@ -18,6 +18,7 @@ SET(SOURCE_FILES
 		RomanToInteger.cpp
 		SearchInsertPosition.cpp
 		SquareRoot.cpp
+		TrappingRainWater.cpp
 		TwoSum.cpp
 		ValidAnagram.cpp
 		ValidParentheses.cpp)

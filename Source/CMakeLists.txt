@@ -9,6 +9,7 @@ SET(SOURCE_FILES
 		FindLargestValueInEachTreeRow.cpp
 		IntegerToRoman.cpp
 		JewelsAndStones.cpp
+		KClosestPointsToOrigin.cpp
 		LongestCommonPrefix.cpp
 		LongestSubstringWithoutRepeatingCharacters.cpp
 		MaximumDepthOfBinaryTree.cpp

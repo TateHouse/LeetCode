@@ -34,3 +34,4 @@ method parameters may be renamed to better reflect their purpose and adhere to m
 | 242 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/)                                             | [C++](https://github.com/TateHouse/LeetCode/blob/master/Source/ValidAnagram.cpp) | Easy      |
 | 515 | [Find Largest Value in Each Tree Row](https://leetcode.com/problems/find-largest-value-in-each-tree-row/) | [C++](https://github.com/TateHouse/LeetCode/blob/master/Source/FindLargestValueInEachTreeRow.cpp) | Medium    |
 | 771 | [Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/)                                     | [C++](https://github.com/TateHouse/LeetCode/blob/master/Source/JewelsAndStones.cpp) | Easy      |
+| 973 | [K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin/)                   | [C++](https://github.com/TateHouse/LeetCode/blob/master/Source/KClosestPointsToOrigin.cpp) | Medium    |

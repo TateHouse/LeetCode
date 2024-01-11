@@ -4,8 +4,7 @@ SET(SOURCE_FILES
 		AddTwoNumbers.cpp
 		BinaryTreeLevelOrderTraversal.cpp
 		BinaryTreeLevelOrderTraversal2.cpp
-		CountPrimes.cpp
-		EvaluateReversePolishNotation.cpp
+		CountPrimes.cpp EvaluateReversePolishNotation.cpp
 		FindIndexOfFirstOccurrenceInString.cpp
 		FindLargestValueInEachTreeRow.cpp
 		IntegerToRoman.cpp
@@ -23,6 +22,7 @@ SET(SOURCE_FILES
 		SquareRoot.cpp
 		TrappingRainWater.cpp
 		TwoSum.cpp
+		UglyNumber.cpp
 		ValidAnagram.cpp
 		ValidParentheses.cpp)
 

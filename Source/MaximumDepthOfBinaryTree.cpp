@@ -23,7 +23,7 @@ public:
 
 class Solution final {
 public:
-    [[maybe_unused]] static const int getMaximumDepth(TreeNode* node) noexcept {
+    [[maybe_unused]] static int getMaximumDepth(TreeNode* node) noexcept {
         if (node == nullptr) {
             return 0;
         }

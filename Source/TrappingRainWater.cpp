@@ -3,7 +3,7 @@
 namespace LeetCode {
 class Solution final {
 public:
-    [[maybe_unused]] static const int getAmountOfTrappedRainWater(const std::vector<int>& heights) noexcept {
+    [[maybe_unused]] static int getAmountOfTrappedRainWater(const std::vector<int>& heights) noexcept {
         if (heights.empty()) {
             return 0;
         }

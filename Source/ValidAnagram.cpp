@@ -4,7 +4,7 @@
 namespace LeetCode {
 class Solution final {
 public:
-    [[maybe_unused]] static const bool isValid(const std::string& first, const std::string& second) {
+    [[maybe_unused]] static bool isValid(const std::string& first, const std::string& second) {
         if (first.length() != second.length()) {
             return false;
         }

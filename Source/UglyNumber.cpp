@@ -3,7 +3,7 @@
 namespace LeetCode {
 class Solution final {
 public:
-    [[maybe_unused]] static const bool isNumberUgly(int number) {
+    [[maybe_unused]] static bool isNumberUgly(int number) {
         if (number <= 0) {
             return false;
         }

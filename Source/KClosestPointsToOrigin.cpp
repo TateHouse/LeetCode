@@ -4,7 +4,7 @@
 namespace LeetCode {
 class Solution final {
 public:
-    [[maybe_unused]] static const std::vector<std::vector<int>> kClosest(std::vector<std::vector<int>>& points,
+    [[maybe_unused]] static std::vector<std::vector<int>> kClosest(std::vector<std::vector<int>>& points,
                                                                          const int closestPointCount) {
         const auto comparison {[](const std::vector<int>& left, const std::vector<int>& right) {
             const auto leftDistance {left[0] * left[0] + left[1] * left[1]};

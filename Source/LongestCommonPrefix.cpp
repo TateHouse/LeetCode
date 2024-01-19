@@ -4,7 +4,7 @@
 namespace LeetCode {
 class Solution final {
 public:
-    [[maybe_unused]] static const std::string getLongestCommonPrefix(std::vector<std::string>& strings) {
+    [[maybe_unused]] static std::string getLongestCommonPrefix(std::vector<std::string>& strings) {
         if (strings.empty()) {
             return "";
         }

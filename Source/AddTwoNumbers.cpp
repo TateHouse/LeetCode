@@ -20,7 +20,7 @@ public:
 
 class Solution final {
 public:
-    [[maybe_unused]] static const ListNode* getLinkedListSum(ListNode* linkedListOne, ListNode* linkedListTwo) {
+    [[maybe_unused]] static ListNode* getLinkedListSum(ListNode* linkedListOne, ListNode* linkedListTwo) {
         auto dummyNode {ListNode()};
         auto* resultLinkedList {&dummyNode};
         auto* firstLinkedList {linkedListOne};

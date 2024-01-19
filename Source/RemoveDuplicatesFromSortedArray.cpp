@@ -3,7 +3,7 @@
 namespace LeetCode {
 class Solution final {
 public:
-    [[maybe_unused]] static const int removeDuplicatesFromSortedArray(std::vector<int>& numbers) {
+    [[maybe_unused]] static int removeDuplicatesFromSortedArray(std::vector<int>& numbers) {
         if (numbers.empty()) {
             return 0;
         }

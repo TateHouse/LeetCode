@@ -5,7 +5,7 @@
 namespace LeetCode {
 class Solution final {
 public:
-    [[maybe_unused]] static const int evaluateReversePolishNotation(const std::vector<std::string>& tokens) {
+    [[maybe_unused]] static int evaluateReversePolishNotation(const std::vector<std::string>& tokens) {
         std::stack<int> operands {};
 
         for (const auto& token : tokens) {

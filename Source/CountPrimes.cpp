@@ -4,7 +4,7 @@
 namespace LeetCode {
 class Solution final {
 public:
-    [[maybe_unused]] static const int getPrimeCount(const int number) {
+    [[maybe_unused]] static int getPrimeCount(const int number) {
         if (number < 2) {
             return 0;
         }

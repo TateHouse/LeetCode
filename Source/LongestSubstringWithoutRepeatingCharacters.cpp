@@ -4,7 +4,7 @@
 namespace LeetCode {
 class Solution final {
 public:
-    [[maybe_unused]] static const int getLengthOfLongestSubstring(const std::string& string) {
+    [[maybe_unused]] static int getLengthOfLongestSubstring(const std::string& string) {
         std::unordered_map<char, int> characters {};
         auto maxLength {0};
         auto startIndex {0};

@@ -4,7 +4,7 @@
 namespace LeetCode {
 class Solution final {
 public:
-    [[maybe_unused]] static const int getIndexOfFirstOccurrenceOfSubstring(const std::string& source,
+    [[maybe_unused]] static int getIndexOfFirstOccurrenceOfSubstring(const std::string& source,
                                                                            const std::string& pattern) noexcept {
         if (pattern.empty()) {
             return 0;
@@ -36,7 +36,7 @@ public:
         return -1;
     }
 
-    [[maybe_unused]] static const int getIndexOfFirstOccurrenceOfSubstringUsingKMP(const std::string& source,
+    [[maybe_unused]] static int getIndexOfFirstOccurrenceOfSubstringUsingKMP(const std::string& source,
                                                                                    const std::string& pattern) noexcept {
         if (pattern.empty()) {
             return 0;
@@ -69,7 +69,7 @@ public:
     }
 
 private:
-    [[nodiscard]] static const std::vector<int> buildLongestPrefixSuffixArray(const std::string& pattern) noexcept {
+    [[nodiscard]] static std::vector<int> buildLongestPrefixSuffixArray(const std::string& pattern) noexcept {
         auto prefixLength {0};
         auto currentIndex {1};
         auto longestPrefixSuffixArray {std::vector<int>(pattern.length(), 0)};

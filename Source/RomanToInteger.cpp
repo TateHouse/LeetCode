@@ -3,7 +3,7 @@
 namespace LeetCode {
 class Solution final {
 public:
-    [[maybe_unused]] static const int getRomanNumeralValue(const std::string& string) noexcept {
+    [[maybe_unused]] static int getRomanNumeralValue(const std::string& string) noexcept {
         auto result {0};
         auto previousValue {0};
 

@@ -5,7 +5,7 @@
 namespace LeetCode {
 class Solution final {
 public:
-    [[maybe_unused]] static const bool isValid(const std::string& string) {
+    [[maybe_unused]] static bool isValid(const std::string& string) {
         if (string.size() % 2 != 0) {
             return false;
         }
